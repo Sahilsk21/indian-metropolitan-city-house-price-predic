@@ -3,4 +3,5 @@ pandas
 numpy 
 scikit-learn
 pickle5 
-seaborn
+seaborn 
+gunicorn

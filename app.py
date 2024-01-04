@@ -1,12 +1,12 @@
-from flask import Flask,render_template,request,redirect 
+from flask import Flask,render_template,request,redirect,jsonify,url_for,app,session
 import pandas as pd 
 import numpy as np 
 import pickle
 
 
-apps=Flask(__name__)  
+app=Flask(__name__)  
 data=pd.read_csv("clean_data.csv")
-@apps.route('/')
+@app.route('/')
 def home(): 
     location=(data["City"]+ " "+data["Location"]).unique()
     city=data["City"].unique()  
@@ -15,7 +15,7 @@ def home():
     
     return render_template("index.html",location=location,city=city,bhk=bhk)
 
-@apps.route("/predict",methods=["POST"])
+@app.route("/predict",methods=["POST"])
 def predict():
     if request.method=='POST': 
         area=int(request.form["area"]) 
@@ -35,4 +35,4 @@ def predict():
         return render_template("predict.html",price=predict_value)
         
 if __name__==("__main__"):
-    apps.run(debug=True)
+    app.run(debug=True)

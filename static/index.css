@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&family=Sevillana&display=swap');
+body{
+   background-image: url("pr4.jpg"); 
+   height: 100vh;
+   width: 100%; 
+   background-position: center;
+   background-repeat: no-repeat;
+}
+#card{
+    width: 100%; 
+    height: 100%; 
+    margin-top: 80px; 
+    background-color: none; 
+    border: none; 
+    background: none;
+}
+#card_header{
+    text-align:  center;
+} 
+#card_header i{
+    
+    font-family: 'Sevillana', cursive;
+    font-size: 2.3rem; 
+    font-weight: bolder; 
+    color: rgb(144, 241, 241);
+
+} 
+#lc{
+    text-align: center;
+} 
+#btn{
+    margin-top: 100px;
+} 
+.ci{
+    color: rgb(24, 26, 25);
+    font-size: 1.5rem;
+} 

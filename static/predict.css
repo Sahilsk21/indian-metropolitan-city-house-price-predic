@@ -1,0 +1,37 @@
+body{
+    background-image: url("pr4.jpg"); 
+   height: 80vh;
+   width: 95%; 
+   background-position: center;
+   background-repeat: no-repeat; 
+   background: cover;
+  
+} 
+#card{
+    width: 100%; 
+    height: 100%; 
+    margin-top: 80px; 
+    background-color: none; 
+    border: none; 
+    background: none;
+}
+#card_header{
+    text-align:  center;
+} 
+#card_header i{
+    
+    font-family: 'Sevillana', cursive;
+    font-size: 2.5rem; 
+    font-weight: bolder; 
+    color: rgb(144, 241, 241);
+
+} 
+#cardbody{
+    text-align: center;
+    margin-top: 18%; 
+    font-size: 2rem; 
+    font-family: sans-serif;
+} 
+#cardbody h1{
+    color: aqua;
+}
